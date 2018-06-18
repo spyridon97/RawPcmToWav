@@ -26,6 +26,10 @@ typedef struct {
     unsigned int    sub_chunk2_size;    // NumSamples * NumChannels * BitsPerSample/8 - size of the next chunk that will be read
 } wav_header_t;
 
+/**
+ * @brief rawPcmToWav is a functions that converts a raw pcm file to Wav
+ * @param filename
+ */
 void rawPcmToWav(char *filename);
 
 #endif //RAWPCMTOWAV_RAWPCMTOWAV_H
